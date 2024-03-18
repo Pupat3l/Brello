@@ -1,0 +1,102 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Container holding the two halves */
+.split-container {
+  display: flex;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Each half */
+.left,
+.right {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+/* Left side styling */
+.left {
+  flex: 3;
+  background-color: var(--background-dark);
+}
+
+/* Right side styling */
+.right {
+  background-color: var(--background-light);
+}
+
+/* Header styling */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn {
+  background-color: #5643fa; /* Button color */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.btn-group {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50vh;
+}
+
+.btn:hover {
+  background-color: #4133c9; /* Button hover color */
+}
+
+.bottom-absolute {
+  position: absolute;
+  bottom: 15px;
+}
+.privacy-stuff {
+  width: 250px;
+}
